@@ -7,8 +7,8 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
     let div = document.createElement("div");
     div.style.backgroundColor = getRandomHexColor();
-    div.style.width = size * 10 + 30 + "px";
-    div.style.height = size * 10 + 30 + "px";
+    div.style.width = size * 10 + 20 + "px";
+    div.style.height = size * 10 + 20 + "px";
     size++;
     arr.push(div);
   }

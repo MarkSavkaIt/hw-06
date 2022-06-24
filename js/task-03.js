@@ -15,14 +15,11 @@ const images = [
 
 const ul = document.getElementsByClassName("gallery")[0];
 
-const arr = [];
+let str = "";
 
 images.forEach((image) => {
-  const li = document.createElement("li");
-  li.insertAdjacentHTML(
-    "afterbegin",
-    `<img src='${image.url} alt='${image.alt}' width='250px' >`
+  str = str.concat(
+    `<li><img src='${image.url} alt='${image.alt}' width='250px' ></li>`
   );
-  arr.push(li);
 });
-ul.append(...arr);
+ul.insertAdjacentHTML("afterbegin", str);
