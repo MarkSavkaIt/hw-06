@@ -19,7 +19,7 @@ let str = "";
 
 images.forEach((image) => {
   str = str.concat(
-    `<li><img src='${image.url} alt='${image.alt}' width='250px' ></li>`
+    `<li><img src='${image.url}' alt='${image.alt}' width='250px' ></li>`
   );
 });
 ul.insertAdjacentHTML("afterbegin", str);
